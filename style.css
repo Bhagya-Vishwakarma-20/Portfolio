@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, #620662, #250026);
+    font-family: sans-serif;
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-p1 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 1vw;
+
+}
+
+.nav-p1:hover {
+    filter: drop-shadow(0px 0px 20px white);
+
+}
+
+.nav-p1 img {
+    filter: brightness(1.2);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+.nav-p1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+.nav-p2 {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.nav-p2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+
+    border-radius: 2vh;
+    padding: 2vh;
+    transition: all 0.5s;
+}
+
+.nav-p2 a:hover {
+
+    background: rgba(255, 255, 255, 0.341);
+    transform: scale(1.05);
+    transition: all 0.5s;
+
+}
+
+/* nav ended */
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    padding-left: 40px;
+
+}
+
+
+
+
+
+.webdev {
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.webdev .name {
+    font-size: 50px;
+
+}
+
+.webdev .h {
+    background: linear-gradient(to right, rgb(255, 198, 255), rgb(255, 255, 255));
+    background-size: cover;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    color: transparent;
+    font-weight: 500;
+    animation: movbg 50s ease-in-out infinite;
+
+}
+
+@keyframes movbg {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 50vw 0%;
+    }
+}
+
+
+
+
+.webdev .p {
+    padding: 2vh 0px 2vh 0px;
+    width: 40vw;
+}
+
+.webdev .buttons {
+
+    display: flex;
+    gap: 1vw;
+}
+
+.webdev .buttons button {
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.webdev .buttons .downcv {
+    background: radial-gradient(#ff2eff, #b10bb1);
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 2vw;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fefefe;
+
+}
+
+.webdev .buttons .downcv:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 10px white;
+
+}
+
+.webdev .buttons img {
+    width: 2vw;
+    height: 2vw;
+    /* border: 2px solid black; */
+
+    border-radius: 50%;
+    background: none;
+}
+
+.webdev .buttons img:hover {
+    filter: drop-shadow(0px 0px 20px white);
+    transform: scale(1.25);
+
+}
+
+
+.ourimg {
+    display: flex;
+    width: 40vw;
+    justify-content: start;
+}
+
+.ourimg img {
+    object-fit: cover;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 4vw;
+    transform: rotateZ(2deg);
+    box-shadow: 0px 0px 6px white;
+    transition: all 1s;
+    filter: grayscale(0.2);
+}
+
+.ourimg img:hover {
+
+    transform: scale(1.1);
+
+    filter: grayscale(0);
+
+    box-shadow: 0px 0px 20px white;
+}
+
+.nav2 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+/* ! Block 2 started */
+
+
+
+.mypro{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.block2{
+    margin-top: 250px;
+    width: 100%;
+}
+
+.sidebar-content{
+    display: flex;
+    height: 100%;
+}
+
+
+.sidebar{
+    width: 22vw ;
+    height: max-content;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.148);
+    border-radius: 20px 0px 0px 20px;
+    
+    /* overflow: hidden; */
+
+}
+
+.projectlist{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project{
+    background: transparent;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    text-align: center;    
+    color: white;
+    transition: all 0.4s ease;
+
+    
+}
+.project1{
+    color: #0e0e0e;
+    /* box-shadow: 0px 0px 20px black inset; */
+    /* background: #9c19e9; */
+    background: #d2b48c;
+
+
+}
+
+
+
+.block2 .maincontent{
+    /* background: #9c19e9; */
+    background: #d2b48c;
+        width: 90%;
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin-right: 20px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.maincontent .imgdes{
+    text-align: center;
+    font-size: 50px ;
+    padding: 50px;
+    color: #0e0e0e;
+
+
+}
+
+.block2 .maincontent .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+    
+}
+
+
+
+
+.block2 .maincontent .img img{
+    margin: 10px;
+    width: 380px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: fill;
+    transition: transform 2s ease;
+    
+    
+}
+.maincontent .img img:hover{
+    transform: scale(1.5) translateY(30px);
+    z-index: 2;
+    
+    
+}
+.maincontent .img img:not(:hover){
+    z-index: 1;
+    filter: blur(0.1px) grayscale(0.25);
+
+    
+}
+
+/* 
+#winner:hover::before{
+    content: "abcd";
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 180px;
+} */
+
+
+
+
+
+.maincontent .projectdes {
+    margin-top: 80px;
+
+
+}
+.maincontent .projectdes p{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 100%;
+    color: #0e0e0e;
+
+
+
+    padding: 10px;
+}
+
+.maincontent .projectdes .a{
+    text-align: center;
+
+    
+}
+.maincontent .projectdes a:active{
+    color: #990dd5;
+
+}
+.maincontent .projectdes a{
+    
+    font-size: 50px;
+    color: #6e002e;
+    
+    text-decoration: none;
+    padding: 20px;
+    
+    
+    
+    
+}
+.maincontent .projectdes button{
+    
+    border-radius: 80px;
+    border: none;
+    padding: 20px;
+    transition: box-shadow 0.5s ease-in-out ;
+    background: #fefefe;
+    z-index: -1;
+    
+}
+.maincontent .projectdes button:hover{
+    box-shadow: 0 0 10px 10em #620b65 inset;
+    
+}
+.maincontent .projectdes button:hover a{
+    color: #ffffff;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! block 3 starrted */
+
+.block3{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    /* Hamburger  */
+
+
+    nav {
+        visibility: hidden;
+    }
+
+   .nav2 img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    
+   }
+   .nav2 button{
+    padding: 40px;
+    background: none;
+    border: none;
+    
+     
+   }
+
+    .nav2 {
+        position: absolute;
+        left: -80vw;top: 0;
+
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        
+        background: radial-gradient(#890089, rgb(79, 1, 79));;
+        height: 0vh;
+        width: 70vw;
+        border-radius: 0px 20px;
+        box-shadow: 0px 2px 20px rgb(209, 25, 219);
+
+    }
+    .nav2 a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+    
+        border-radius: 2vh;
+        padding: 2vh;
+        transition: all 0.5s;
+    }
+    .nav2 a:hover {
+
+        background: rgba(255, 255, 255, 0.341);
+        transform: scale(1.05);
+        transition: all 0.5s;
+    
+    }
+    
+
+    @keyframes opennav{
+        from{
+            
+                position: absolute;
+                left: -72vw;
+                top: 0;
+               
+                
+            
+        }
+        to
+        {
+          
+                position: absolute;
+                left: 0;
+                top: 0;
+                
+                
+            
+        }
+    }
+    @keyframes closenav {
+        from{
+            
+                position: absolute;
+                left: 0;
+                top: 0;
+                
+
+            
+        }
+        to{
+            
+                position: absolute;
+                left: -72vw;
+                top: 0;
+                
+            
+        }
+    }
+    @keyframes inchieght{
+        from{
+            height: 0vh;
+        }
+        to{
+            height: 200vh;
+        }
+
+    }
+    @keyframes dechieght{
+        from{
+            height: 200vh;
+        }
+        to{
+            height: 0vh;
+        }
+
+    }
+
+
+/* body after nav */
+/* nav ended */
+
+
+
+    body {
+        background: linear-gradient(to right, rgb(54, 3, 54), rgb(37, 0, 38));
+        background-attachment: fixed; /* Ensure the background is fixed */
+        background-size: 100% 100%; /* Make sure it covers the entire element */
+        background-position: center; /* Center the background */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+    }
+
+
+
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 10vh;
+   
+
+}
+
+
+
+
+
+.webdev {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.webdev .name {
+    font-size: 50px;
+
+}
+
+.webdev .h {
+    background: linear-gradient(to right, rgb(255, 198, 255), rgb(75, 15, 127));
+    background-size: cover;
+    -webkit-background-clip: text;
+    font-size: 75px;
+    color: transparent;
+    font-weight: 500;
+    animation: movbg 10s ease-in-out infinite;
+
+}
+
+@keyframes movbg {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 50vw 0%;
+    }
+}
+
+
+
+
+.webdev .p {
+    padding: 2vh 0px 2vh 0px;
+    width: 90vw;
+}
+
+.webdev .buttons {
+
+    display: flex;
+    gap: 1vw;
+}
+
+.webdev .buttons button {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.webdev .buttons .downcv {
+    background: radial-gradient(#ff2eff, purple);
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 2vw;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.webdev .buttons .downcv:hover {
+    box-shadow: 0px 0px 10px white;
+
+}
+
+.webdev .buttons img {
+    width: 8vw;
+    height:8vw;
+    /* border: 2px solid black; */
+
+    border-radius: 50%;
+    background: none;
+}
+
+.webdev .buttons img:hover {
+    filter: drop-shadow(0px 0px 20px white);
+
+}
+
+
+.ourimg {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    align-self: center;
+}
+
+.ourimg img {
+    margin: 20%;
+    object-fit: cover;
+    width: 300px;
+    height: 50vh;
+    border-radius: 4vw;
+    transform: rotateZ(0deg);
+    box-shadow: 0px 0px 6px white;
+    transition: all 1s;
+    filter: grayscale(0.2);
+}
+
+.ourimg img:hover {
+
+    transform: scale(1.1);
+
+    filter: grayscale(0);
+
+    box-shadow: 0px 0px 20px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
