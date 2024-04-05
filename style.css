@@ -306,6 +306,7 @@ nav {
 
 
 .block2 .maincontent .img img{
+    box-shadow: 0px 0px 20px black;
     margin: 10px;
     width: 380px;
     height: 200px;
