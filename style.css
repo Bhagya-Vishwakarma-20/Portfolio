@@ -250,6 +250,7 @@ nav {
 .projectlist{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
 }
 
@@ -298,6 +299,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;   
+    background: transparent;
     
     
 }
@@ -306,12 +308,12 @@ nav {
 
 
 .block2 .maincontent .img img{
-    box-shadow: 0px 0px 20px black;
+    filter: drop-shadow(0px 0px 20px black);
     margin: 10px;
-    width: 380px;
-    height: 200px;
+    max-width:380px;
+    max-height: 380px;
     border-radius: 20px;
-    object-fit: fill;
+    object-fit: contain;
     transition: transform 2s ease;
     
     

@@ -91,6 +91,38 @@ projects.forEach(project => {
                     <p>Certainly! Imagine a music streaming platform modeled after Spotify but with a standout feature: seamless responsiveness across all devices. This clone of Spotify automatically scans for music libraries and adds songs as soon as a folder is included, ensuring that your music collection stays up-to-date effortlessly. Whether you're accessing it from your computer, tablet, or smartphone, the experience remains smooth and consistent.</p>
                 </div>`;
             }
+            if (project==projects[2]) {
+                
+                maincontent.innerHTML=`<div class="imgdes">Snapshots of X (twitter) clone</div>
+                <div class="img">
+                <img src="assets/x-tablet.png" alt="">
+                <img src="assets/x-Desktop.png" alt="">
+                <img src="assets/x-phone.png" alt="">
+                </div>
+                <div class="projectdes">
+                <div class="a">
+
+                <button type="button">
+                    <a href="https://bhagya-vishwakarma-20.github.io/X-clone/" target="_blank">Visit X Clone</a>
+                </button>
+                  
+                  
+
+
+            </div>
+                    <p>
+                    The website mirrors the modern aesthetics and intuitive features of website X,
+ensuring a fully responsive experience across all devices.
+Navigation flows smoothly and naturally,
+aligning with the original's layout and design.
+
+Users benefit from seamless browsing and interaction,
+experiencing the familiar feel of the original site.
+Consistency and functionality enhance the overall user experience,
+capturing the true essence of website X.
+                    </p>
+                </div>`;
+            }
             
             
 
